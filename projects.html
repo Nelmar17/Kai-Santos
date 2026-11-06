@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-pt-40 sm:scroll-pt-24">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projects — Kai Santos | Student Portfolio</title>
+        <meta
+            name="description"
+            content="Kai Santos’s first-year IT portfolio: beginner web projects, class notes, and the skills he is learning."
+        >
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+
+            a:focus-visible {
+                outline: 3px solid #93c5fd;
+                outline-offset: 5px;
+            }
+
+            .skip-link {
+                position: fixed;
+                z-index: 60;
+                top: -80px;
+                left: 20px;
+                padding: 10px 16px;
+                background-color: #0f172a;
+                color: #ffffff;
+            }
+
+            .skip-link:focus {
+                top: 10px;
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                html {
+                    scroll-behavior: auto;
+                }
+
+                a {
+                    transition: none;
+                }
+            }
+        </style>
+    </head>
+    <body class="bg-slate-900 pt-36 font-sans leading-relaxed text-slate-100 sm:pt-20">
+        <a class="skip-link" href="#main">Skip to content</a>
+        <header
+            class="fixed inset-x-0 top-0 z-50 h-36 border-b border-slate-600 bg-slate-900/95 backdrop-blur-sm sm:h-20"
+        >
+            <div
+                class="mx-auto flex h-full max-w-6xl flex-wrap items-center justify-between gap-5 px-6 py-5"
+            >
+                <a class="text-xl font-semibold tracking-tight" href="index.html">Kai Santos<span class="text-blue-300">.</span></a>
+                <nav class="flex w-full flex-wrap gap-5 sm:w-auto" aria-label="Main navigation">
+                    <a class="text-slate-300 hover:text-blue-300 py-2 text-sm" href="index.html">Home</a>
+                    <a class="text-slate-300 hover:text-blue-300 py-2 text-sm" href="about.html">About</a>
+                    <a class="text-slate-300 hover:text-blue-300 py-2 text-sm" href="skills.html">Skills</a>
+                    <a
+                        class="text-blue-300 underline underline-offset-8 py-2 text-sm"
+                        href="projects.html"
+                        aria-current="page"
+                    >
+                        Projects
+                    </a>
+                    <a class="text-slate-300 hover:text-blue-300 py-2 text-sm" href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <main id="main" class="mx-auto max-w-6xl px-6" tabindex="-1">
+            <header class="max-w-3xl py-12 md:py-16">
+                <p class="mb-5 font-mono text-sm text-blue-300">PROJECTS</p>
+                <h1 class="mb-6 text-4xl font-semibold leading-tight tracking-tight md:text-6xl">First attempts,<br>kept here.</h1>
+                <p class="text-lg text-slate-300">A few pages from class and from practicing at home. Each one gave me a new reason to open my notes.</p>
+            </header>
+            <div class="space-y-12">
+                <article class="grid items-center gap-8 border-t border-slate-600 pt-8 md:grid-cols-2">
+                    <img
+                        class="w-full rounded-md"
+                        src="assets/images/profile-page.png"
+                        alt="A simple slate and blue personal profile page with an introduction and interests"
+                        width="800"
+                        height="500"
+                        loading="lazy"
+                    >
+                    <div>
+                        <p class="mb-3 font-mono text-xs text-blue-300">01 / HTML &amp; CSS</p>
+                        <h3 class="mb-4 text-3xl font-semibold tracking-tight">A Page About Me</h3>
+                        <p class="mb-5 text-slate-300">
+                            An introduction, a few interests, and links to my school activities. This was my first try at
+                            turning a sketch into a web page.
+                        </p>
+                        <a
+                            class="text-sm text-blue-300 underline underline-offset-4 hover:text-blue-200"
+                            href="assets/images/profile-page.png"
+                        >
+                            View image preview →
+                        </a>
+                    </div>
+                </article>
+                <article class="grid items-center gap-8 border-t border-slate-600 pt-8 md:grid-cols-2">
+                    <img
+                        class="w-full rounded-md"
+                        src="assets/images/restaurant-menu.png"
+                        alt="A warm white restaurant menu with blue headings and a short list of meals"
+                        width="800"
+                        height="500"
+                        loading="lazy"
+                    >
+                    <div>
+                        <p class="mb-3 font-mono text-xs text-blue-300">02 / HTML &amp; Tailwind</p>
+                        <h3 class="mb-4 text-3xl font-semibold tracking-tight">Lunch Break Menu</h3>
+                        <p class="mb-5 text-slate-300">
+                            A menu for an imaginary campus lunch spot. I practiced grouping information and lining up meal
+                            names and prices.
+                        </p>
+                        <a
+                            class="text-sm text-blue-300 underline underline-offset-4 hover:text-blue-200"
+                            href="assets/images/restaurant-menu.png"
+                        >
+                            View image preview →
+                        </a>
+                    </div>
+                </article>
+                <article class="grid items-center gap-8 border-t border-slate-600 pt-8 md:grid-cols-2">
+                    <img
+                        class="w-full rounded-md"
+                        src="assets/images/class-table.png"
+                        alt="A clean blue and white HTML table showing a weekly study schedule"
+                        width="800"
+                        height="500"
+                        loading="lazy"
+                    >
+                    <div>
+                        <p class="mb-3 font-mono text-xs text-blue-300">03 / Tables &amp; layout</p>
+                        <h3 class="mb-4 text-3xl font-semibold tracking-tight">My Study Week</h3>
+                        <p class="mb-5 text-slate-300">
+                            A weekly study table with room for breaks and homework. A small exercise in table headings,
+                            readable rows, and spacing.
+                        </p>
+                        <a
+                            class="text-sm text-blue-300 underline underline-offset-4 hover:text-blue-200"
+                            href="assets/images/class-table.png"
+                        >
+                            View image preview →
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <p class="my-12 text-sm text-slate-300">
+                These early activities focus on page structure and styling. The previews show the layouts rather
+                than live applications.
+            </p>
+        </main>
+        <footer class="border-t border-slate-600">
+            <div
+                class="mx-auto flex max-w-6xl flex-wrap justify-between gap-3 px-6 py-6 text-sm text-slate-300"
+            >
+                <p>© 2026 Kai Santos</p>
+                <p>BSIT, first year · Marikina City</p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-pt-40 sm:scroll-pt-24">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home — Kai Santos | Student Portfolio</title>
+        <meta
+            name="description"
+            content="Kai Santos’s first-year IT portfolio: beginner web projects, class notes, and the skills he is learning."
+        >
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+
+            a:focus-visible {
+                outline: 3px solid #93c5fd;
+                outline-offset: 5px;
+            }
+
+            .skip-link {
+                position: fixed;
+                z-index: 60;
+                top: -80px;
+                left: 20px;
+                padding: 10px 16px;
+                background-color: #0f172a;
+                color: #ffffff;
+            }
+
+            .skip-link:focus {
+                top: 10px;
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                html {
+                    scroll-behavior: auto;
+                }
+
+                a {
+                    transition: none;
+                }
+            }
+        </style>
+    </head>
+    <body class="bg-slate-900 pt-36 font-sans leading-relaxed text-slate-100 sm:pt-20">
+        <a class="skip-link" href="#main">Skip to content</a>
+        <header
+            class="fixed inset-x-0 top-0 z-50 h-36 border-b border-slate-600 bg-slate-900/95 backdrop-blur-sm sm:h-20"
+        >
+            <div
+                class="mx-auto flex h-full max-w-6xl flex-wrap items-center justify-between gap-5 px-6 py-5"
+            >
+                <a class="text-xl font-semibold tracking-tight" href="index.html">Kai Santos<span class="text-blue-300">.</span></a>
+                <nav class="flex w-full flex-wrap gap-5 sm:w-auto" aria-label="Main navigation">
+                    <a
+                        class="text-blue-300 underline underline-offset-8 py-2 text-sm"
+                        href="index.html"
+                        aria-current="page"
+                    >
+                        Home
+                    </a>
+                    <a class="text-slate-300 hover:text-blue-300 py-2 text-sm" href="about.html">About</a>
+                    <a class="text-slate-300 hover:text-blue-300 py-2 text-sm" href="skills.html">Skills</a>
+                    <a class="text-slate-300 hover:text-blue-300 py-2 text-sm" href="projects.html">Projects</a>
+                    <a class="text-slate-300 hover:text-blue-300 py-2 text-sm" href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <main id="main" class="mx-auto max-w-6xl px-6" tabindex="-1">
+            <section class="grid items-center gap-12 py-12 md:grid-cols-2 md:py-16" aria-label="Introduction">
+                <div>
+                    <p class="mb-5 font-mono text-sm text-blue-300">BSIT / FIRST YEAR</p>
+                    <h1 class="mb-6 text-5xl font-semibold leading-tight tracking-tight md:text-6xl">Hi, I’m Kai.<br><span class="text-blue-300">New to IT.<br>Making a start.</span></h1>
+                    <p class="max-w-xl text-lg text-slate-300">
+                        I’m learning how a web page goes from a blank file to something I can share. This is where I
+                        keep my class activities and small experiments.
+                    </p>
+                    <div class="mt-8 flex flex-wrap items-center gap-6">
+                        <a
+                            class="rounded bg-blue-300 px-5 py-3 font-semibold text-slate-900 transition hover:bg-blue-200"
+                            href="projects.html"
+                        >
+                            See my projects
+                        </a>
+                        <a
+                            class="text-slate-100 underline underline-offset-4 hover:text-blue-300"
+                            href="about.html"
+                        >
+                            More about me
+                        </a>
+                    </div>
+                </div>
+                <figure class="mx-auto w-full max-w-sm">
+                    <img
+                        class="w-full rounded-md bg-slate-800 object-contain"
+                        src="assets/images/student-avatar-kai.png"
+                        alt="Illustrated avatar of Kai wearing glasses, a slate hoodie, and a soft-blue shirt"
+                        width="600"
+                        height="600"
+                    >
+                    <figcaption class="mt-3 flex justify-between gap-4 text-xs text-slate-300"><span>Kai Santos</span><span>First year · BSIT</span></figcaption>
+                </figure>
+            </section>
+            <section class="border-t border-slate-600 py-12" aria-labelledby="recent-title">
+                <div class="mb-8 flex flex-wrap items-end justify-between gap-5">
+                    <div>
+                        <p class="mb-3 font-mono text-sm text-blue-300">RECENT PRACTICE</p>
+                        <h2 id="recent-title" class="text-3xl font-semibold tracking-tight">A menu for lunch break</h2>
+                    </div>
+                    <a
+                        class="text-sm text-blue-300 underline underline-offset-4 hover:text-blue-200"
+                        href="projects.html"
+                    >
+                        All projects →
+                    </a>
+                </div>
+                <img
+                    class="w-full rounded-md"
+                    src="assets/images/restaurant-menu.png"
+                    alt="A warm white restaurant menu with blue headings and a short list of meals"
+                    width="800"
+                    height="500"
+                    loading="lazy"
+                >
+                <div class="mt-6 grid gap-5 md:grid-cols-2">
+                    <p class="font-mono text-sm text-blue-300">HTML5 / TAILWIND CSS</p>
+                    <p class="text-slate-300">
+                        No ordering system, just a clear menu. This activity was about grouping content and making a
+                        simple page easy to read.
+                    </p>
+                </div>
+            </section>
+            <section
+                class="grid gap-8 border-t border-slate-600 py-12 md:grid-cols-2"
+                aria-labelledby="now-title"
+            >
+                <h2 id="now-title" class="text-2xl font-semibold">Currently working on</h2>
+                <div>
+                    <p class="mb-5 text-slate-300">
+                        Making my pages work at smaller screen sizes, and learning to understand an error before
+                        changing things at random.
+                    </p>
+                    <a
+                        class="text-blue-300 underline underline-offset-4 hover:text-blue-200"
+                        href="skills.html"
+                    >
+                        What I’m learning →
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer class="border-t border-slate-600">
+            <div
+                class="mx-auto flex max-w-6xl flex-wrap justify-between gap-3 px-6 py-6 text-sm text-slate-300"
+            >
+                <p>© 2026 Kai Santos</p>
+                <p>BSIT, first year · Marikina City</p>
+            </div>
+        </footer>
+    </body>
+</html>
